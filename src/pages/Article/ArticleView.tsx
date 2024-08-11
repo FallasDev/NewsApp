@@ -1,6 +1,5 @@
 import { Header } from "./Components/Header";
 import ArticleSection from "./Components/ArticlesSection";
-import { createInMemoryRepository } from "../../lib/Article/Infrastructure/InMemoryRepository";
 import { createArticleService } from "../../lib/Article/Aplication/ArticleService";
 import { createGNewsRepository } from "../../lib/Article/Infrastructure/GNewsRepository";
 import { useContext } from "react";
