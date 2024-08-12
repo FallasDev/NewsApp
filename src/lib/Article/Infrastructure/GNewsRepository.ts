@@ -54,7 +54,7 @@ export const createGNewsRepository = (): ArticleRepository => {
             return articles;
         },
         find: async (filter: { category: string, country: string, lan: string, q: string }) => {
-            const url = `https://gnews.io/api/v4/search?&category=${filter.category}q=${filter.q}&lang=${filter.lan}&country=${filter.country}&max=10&apikey=` + apikey;
+            const url = `https://gnews.io/api/v4/search?&category=${filter.category}&q=${filter.q}&lang=${filter.lan}&country=${filter.country}&max=10&apikey=` + apikey;
             let findedArticles: Article[] = [];
             await fetch(url)
                 .then((res) => res.json())
